@@ -105,6 +105,185 @@ body {
   padding: 2.4rem 1.2rem 1.5rem;
 }
 
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+.guide-section {
+  background: #040809;
+  border: 1px solid #0b1521;
+  border-radius: 0.9rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.guide-section h2 {
+  font-size: 2.1rem;
+  margin-bottom: 0.7rem;
+  color: #38ebef;
+  font-weight: 800;
+}
+
+.guide-lead {
+  color: #e4f0fb;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  max-width: 58rem;
+}
+
+.guide-lead code {
+  font-family: "Fira Code", "Source Code Pro", Consolas, monospace;
+  font-size: 0.92em;
+  color: #8fd8e2;
+  background: rgba(17, 29, 42, 0.9);
+  padding: 0.12em 0.35em;
+  border-radius: 0.25rem;
+}
+
+.step-list {
+  list-style: none;
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.step-list li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.75rem;
+  border-left: 2px solid rgba(52, 240, 226, 0.35);
+  padding-bottom: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.step-list li::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(48, 255, 210, 0.9), rgba(35, 195, 185, 1));
+  color: #061d24;
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.step-list strong {
+  display: block;
+  color: #fff;
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.step-list span {
+  display: block;
+  color: var(--subtext);
+  line-height: 1.65;
+  font-size: 0.98rem;
+}
+
+.step-list code,
+.principle-list code {
+  font-family: "Fira Code", "Source Code Pro", Consolas, monospace;
+  font-size: 0.9em;
+  color: #8fd8e2;
+}
+
+.step-list kbd {
+  font-family: "Fira Code", "Source Code Pro", Consolas, monospace;
+  font-size: 0.88em;
+  background: #111d2a;
+  border: 1px solid rgba(78, 219, 227, 0.35);
+  border-radius: 0.3rem;
+  padding: 0.15em 0.45em;
+  color: #d9eaee;
+}
+
+.guide-foot {
+  margin-top: 0.5rem;
+}
+
+.text-link {
+  color: var(--highlight);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(254, 168, 111, 0.45);
+}
+
+.text-link:hover {
+  color: #ffc896;
+  border-bottom-color: rgba(254, 168, 111, 0.85);
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-card {
+  background: #111b25;
+  border: 1px solid #1b2a35;
+  border-radius: 0.8rem;
+  padding: 1.1rem 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+.info-card h3 {
+  color: #e1f3ff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-card p {
+  color: #8eb3c8;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.arch-tree {
+  margin-bottom: 0.25rem;
+}
+
+.principle-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.principle-list li {
+  padding: 1rem 1.1rem;
+  background: #111b25;
+  border: 1px solid #1b2a35;
+  border-radius: 0.75rem;
+  border-left: 3px solid rgba(254, 168, 111, 0.85);
+}
+
+.principle-list strong {
+  display: block;
+  color: #fff;
+  margin-bottom: 0.35rem;
+  font-size: 1.02rem;
+}
+
+.principle-list span {
+  color: var(--subtext);
+  line-height: 1.65;
+  font-size: 0.98rem;
+}
+
 .hero-section {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
@@ -247,6 +426,7 @@ body {
 @media (max-width: 960px) {
   .hero-section { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .info-cards { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {

@@ -56,6 +56,108 @@
         </div>
       </section>
 
+      <section id="start" class="guide-section start-section" aria-labelledby="start-heading">
+        <h2 id="start-heading">//GET STARTED</h2>
+        <p class="guide-lead">
+          Move from a blank machine to a running page in VS Code. These steps mirror what we use in class: keep files in one
+          folder, name them predictably, and preview often so problems stay small.
+        </p>
+
+        <ol class="step-list">
+          <li>
+            <strong>Install VS Code</strong>
+            <span>Download from the official site, run the installer, and pin the app if you like quick access.</span>
+          </li>
+          <li>
+            <strong>Create a project folder</strong>
+            <span>On your machine, make a folder such as <code>my-first-site</code>. Everything for this site lives here.</span>
+          </li>
+          <li>
+            <strong>Open the folder, not a single file</strong>
+            <span>In VS Code: <kbd>File</kbd> → <kbd>Open Folder…</kbd> and pick that directory. The Explorer sidebar should show your folder as the root.</span>
+          </li>
+          <li>
+            <strong>Add <code>Index.html</code> and <code>Index.css</code></strong>
+            <span>Create HTML for structure and a stylesheet for presentation. Link the CSS with <code>&lt;link rel="stylesheet" href="Index.css" /&gt;</code> in the document head.</span>
+          </li>
+          <li>
+            <strong>Install Live Server (recommended)</strong>
+            <span>Open Extensions, search for “Live Server,” install, then right-click your HTML file → <strong>Open with Live Server</strong>. Your browser will show <code>localhost</code> and refresh when you save.</span>
+          </li>
+        </ol>
+
+        <p class="guide-foot">
+          <a class="text-link" href="#architecture">Next: how we structure files →</a>
+        </p>
+      </section>
+
+      <section id="architecture" class="guide-section architecture-section" aria-labelledby="architecture-heading">
+        <h2 id="architecture-heading">//PROJECT ARCHITECTURE</h2>
+        <p class="guide-lead">
+          Good architecture for a small static site is mostly about clarity: separate concerns so each file has one job, and
+          keep paths short and consistent so links and assets never “get lost.”
+        </p>
+
+        <div class="info-cards">
+          <article class="info-card">
+            <h3>HTML</h3>
+            <p>Structure and meaning: headings, sections, navigation, and links. Avoid styling in HTML except for hooking up class names.</p>
+          </article>
+          <article class="info-card">
+            <h3>CSS</h3>
+            <p>Layout, color, typography, and responsive rules. One main stylesheet keeps the look easy to change in one place.</p>
+          </article>
+          <article class="info-card">
+            <h3>Assets</h3>
+            <p>Images, fonts, and icons in folders such as <code>images/</code> or <code>assets/</code>. Reference them with relative paths from the HTML file that uses them.</p>
+          </article>
+        </div>
+
+        <div class="code-card arch-tree" role="figure" aria-label="Example folder layout">
+          <div class="code-title">example-project/ — typical layout</div>
+          <pre><code>my-first-site/
+├── Index.html          ← pages &amp; content
+├── Index.css           ← layout &amp; theme
+└── images/
+    └── logo.png        ← referenced from HTML/CSS</code></pre>
+        </div>
+
+        <p class="guide-foot">
+          <a class="text-link" href="#ai">Next: using AI in development →</a>
+        </p>
+      </section>
+
+      <section id="ai" class="guide-section ai-section" aria-labelledby="ai-heading">
+        <h2 id="ai-heading">//AI DEVELOPMENT</h2>
+        <p class="guide-lead">
+          AI assistants can speed up learning and boilerplate, but they are not a substitute for understanding your own project.
+          Use them in a way that keeps you honest, protects privacy, and fits academic integrity expectations.
+        </p>
+
+        <ul class="principle-list">
+          <li>
+            <strong>Verify everything</strong>
+            <span>Run the code, read error messages, and fix issues yourself. Treat AI output as a draft to review, not a guarantee.</span>
+          </li>
+          <li>
+            <strong>Protect secrets</strong>
+            <span>Never paste passwords, API keys, or private student data into tools you do not trust. Use placeholders in examples.</span>
+          </li>
+          <li>
+            <strong>Learn the “why”</strong>
+            <span>Ask the model to explain tradeoffs in plain language so you can explain the same choices on a team or in a report.</span>
+          </li>
+          <li>
+            <strong>Follow course rules</strong>
+            <span>If an assignment restricts outside help or requires disclosure, follow those rules and document how tools were used when asked.</span>
+          </li>
+        </ul>
+
+        <p class="guide-foot">
+          <a class="text-link" href="#team">Meet the team →</a>
+        </p>
+      </section>
+
       <section id="team" class="team-section">
         <h2>//MEET THE TEAM</h2>
         <p class="team-text">We are team 5, a group of computer science students at App State.</p>
