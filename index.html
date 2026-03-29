@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern DEV - Team &amp; VS Code Guide</title>
+  <title>VS Code Feature Documentation</title>
   <link rel="stylesheet" href="Index.css" />
 </head>
 <body>
@@ -15,10 +15,14 @@
           <a class="nav-item active" href="#home">HOME</a>
           <a class="nav-item" href="#start">START</a>
           <a class="nav-item" href="#architecture">ARCHITECTURE</a>
-          <a class="nav-item" href="#ai">AI DEVELOPMENT</a>
+          <a class="nav-item" href="#features">FEATURES</a>
+          <a class="nav-item" href="#ai">AI TOOLS</a>
+          <a class="nav-item" href="#faq">FAQ</a>
+          <a class="nav-item" href="#troubleshoot">TROUBLESHOOT</a>
+          <a class="nav-item" href="#contact">CONTACT</a>
         </nav>
-        <div class="brand">~/<span>MODERN-DEV</span></div>
-        <a class="cta-team" href="#team">OUR TEAM</a>
+        <div class="brand">~/<span>VS CODE</span></div>
+        <a class="cta-team" href="#team">TEAM</a>
       </div>
       <div class="window-controls">
         <span></span><span></span><span></span>
@@ -28,29 +32,27 @@
     <main class="content">
       <section id="home" class="hero-section">
         <div class="hero-copy">
-          <h1>A VS Code guide for beginner developers</h1>
+          <h1>VS Code documentation for beginner developers</h1>
           <p>
-            Learn to build your first web project using VS Code from installation to live preview. We’ll cover extensions,
-            project structure, tech architecture, and how to use AI tools responsibly in your workflow.
+            Discover the editor’s built-in features, key extensions, and workflow patterns that make VS Code the best tool for modern web projects. This guide shows how to install the editor, organize files, and work with Live Server, terminal, and source control.
           </p>
           <a class="btn-button" href="#start">→ Get Started</a>
         </div>
         <div class="hero-preview">
           <div class="code-card">
             <div class="code-title">index.html — my-first-project</div>
-            <pre><code>&lt;!-- your first HTML file --&gt;
+            <pre><code>&lt;!-- start with a project folder in VS Code --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;link rel="stylesheet" href="Index.css" /&gt;
+    &lt;title&gt;VS Code Docs&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;h1&gt;Hello, VS Code!&lt;/h1&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-
-// Live Server running on
-// localhost:5500
 </code></pre>
           </div>
         </div>
@@ -123,11 +125,46 @@
         </div>
 
         <p class="guide-foot">
-          <a class="text-link" href="#ai">Next: using AI in development →</a>
+          <a class="text-link" href="#features">Next: explore VS Code features →</a>
+        </p>
+      </section>
+
+      <section id="features" class="guide-section features-section" aria-labelledby="features-heading">
+        <h2 id="features-heading">//VS CODE FEATURES</h2>
+        <p class="guide-lead">
+          VS Code packs powerful built-in tools that help you write code faster, fix errors quickly, and keep your project files organized.
+        </p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3>Extensions</h3>
+            <p>Install language support, linters, and productivity tools from the Extensions sidebar. Use only trusted extensions for stability.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3>Source Control</h3>
+            <p>Track changes, stage updates, and commit from the built-in Git panel. VS Code makes version control accessible from the editor.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3>Terminal</h3>
+            <p>Open the integrated terminal with <code>Ctrl+`</code> to run commands without leaving VS Code. Keep your workflow in one window.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3>Debugging</h3>
+            <p>Use the Debug view to set breakpoints, inspect variables, and step through code. The editor shows runtime output and diagnostics.</p>
+          </article>
+        </div>
+
+        <p class="guide-foot">
+          <a class="text-link" href="#ai">Next: use AI tools responsibly →</a>
         </p>
       </section>
 
       <section id="ai" class="guide-section ai-section" aria-labelledby="ai-heading">
+
         <h2 id="ai-heading">//AI DEVELOPMENT</h2>
         <p class="guide-lead">
           AI assistants can speed up learning and boilerplate, but they are not a substitute for understanding your own project.
@@ -154,8 +191,96 @@
         </ul>
 
         <p class="guide-foot">
-          <a class="text-link" href="#team">Meet the team →</a>
+          <a class="text-link" href="#faq">Next: common questions →</a>
         </p>
+      </section>
+
+      <section id="faq" class="guide-section faq-section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">//FAQ</h2>
+        <p class="guide-lead">
+          Quick answers for the most common VS Code questions, arranged like a simple code reference.
+        </p>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>How do I install an extension?</h3>
+            <p>Open the Extensions view with <kbd>Ctrl+Shift+X</kbd>, search for the extension name, and click Install. Reload when prompted.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Where is the terminal?</h3>
+            <p>Open the integrated terminal with <kbd>Ctrl+`</kbd>. Use it to run npm commands, Git, and local servers without leaving the editor.</p>
+          </article>
+          <article class="faq-item">
+            <h3>How do I use source control?</h3>
+            <p>Switch to the Source Control icon on the left. Stage changes, write a commit message, and push or pull from the repo.</p>
+          </article>
+          <article class="faq-item">
+            <h3>How can I debug JavaScript?</h3>
+            <p>Open the Run view, add a launch configuration if needed, then start debugging. Set breakpoints directly in the editor.</p>
+          </article>
+        </div>
+
+        <p class="guide-foot">
+          <a class="text-link" href="#troubleshoot">Next: troubleshooting tips →</a>
+        </p>
+      </section>
+
+      <section id="troubleshoot" class="guide-section troubleshoot-section" aria-labelledby="troubleshoot-heading">
+        <h2 id="troubleshoot-heading">//TROUBLESHOOT</h2>
+        <p class="guide-lead">
+          If something stops working, use the editor’s logs and built-in diagnostics first. These common fixes solve most startup issues.
+        </p>
+
+        <div class="terminal-card" role="img" aria-label="VS Code terminal output">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code>[INFO] Live Server started on http://127.0.0.1:5500
+[WARN] Missing recommended extension: Live Server
+[ERROR] Cannot resolve path: styles.css
+[FIX] Save HTML and check the file path in the document head.</code></pre>
+        </div>
+
+        <ul class="troubleshoot-list">
+          <li>
+            <strong>Extension not loading</strong>
+            <span>Restart VS Code, then reinstall the extension from Marketplace. Confirm you are using the stable release.</span>
+          </li>
+          <li>
+            <strong>Terminal command fails</strong>
+            <span>Check the integrated terminal shell path in Settings and use the same shell as your OS command line.</span>
+          </li>
+          <li>
+            <strong>Preview page is blank</strong>
+            <span>Verify the HTML file is saved, the <code>&lt;link&gt;</code> path is correct, and Live Server is running.</span>
+          </li>
+        </ul>
+
+        <p class="guide-foot">
+          <a class="text-link" href="#contact">Next: contact the team →</a>
+        </p>
+      </section>
+
+      <section id="contact" class="guide-section contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">//CONTACT</h2>
+        <p class="guide-lead">
+          Need extra help? Reach this guide team or refer to the official VS Code docs for more support and settings details.
+        </p>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Support email</h3>
+            <a href="mailto:support@vscode-docs.example">support@vscode-docs.example</a>
+          </article>
+          <article class="contact-card">
+            <h3>Official docs</h3>
+            <a href="https://code.visualstudio.com/docs" target="_blank" rel="noreferrer noopener">code.visualstudio.com/docs</a>
+          </article>
+          <article class="contact-card">
+            <h3>Course feedback</h3>
+            <a href="mailto:team5@appstate.edu">team5@appstate.edu</a>
+          </article>
+        </div>
       </section>
 
       <section id="team" class="team-section">
@@ -167,21 +292,25 @@
             <div class="avatar">CF</div>
             <h3>Carson Fouts</h3>
             <p>Programmer · Writer</p>
+            <a class="team-contact" href="mailto:carson.fouts@example.com">carson.fouts@example.com</a>
           </article>
           <article class="team-card">
             <div class="avatar">BC</div>
             <h3>Bradley Chaffin</h3>
             <p>Research Coordinator · Writer</p>
+            <a class="team-contact" href="mailto:bradley.chaffin@example.com">bradley.chaffin@example.com</a>
           </article>
           <article class="team-card">
             <div class="avatar">EC</div>
             <h3>Ethan Cavanaugh</h3>
             <p>Team Lead · Programmer</p>
+            <a class="team-contact" href="mailto:ethan.cavanaugh@example.com">ethan.cavanaugh@example.com</a>
           </article>
           <article class="team-card">
             <div class="avatar">BB</div>
             <h3>Batkhuleg Bazarragchaa</h3>
             <p>Programmer · Writer</p>
+            <a class="team-contact" href="mailto:batkhuleg.bazarragchaa@example.com">batkhuleg.bazarragchaa@example.com</a>
           </article>
         </div>
       </section>
